@@ -6,13 +6,13 @@
 :root {
   /* Colors */
   --black: #0a0a0a;
-  --deep-navy: #1a1a2e;
-  --dark-surface: #111111;
-  --warm-white: #f5f0eb;
-  --light-gray: #e8e3de;
-  --medium-gray: #999;
-  --accent: #c8ff00;
-  --accent-dim: #a0cc00;
+  --deep-navy: #0f1923;
+  --dark-surface: #111418;
+  --warm-white: #F0F2F5;
+  --light-gray: #D8DCE2;
+  --medium-gray: #8A9BAE;
+  --accent: #4A90D9;
+  --accent-dim: #3A7BC8;
   --white: #ffffff;
   --red: #ff3b30;
 

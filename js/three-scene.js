@@ -59,7 +59,7 @@ const HeroScene = (() => {
 
     // Particle material
     const material = new THREE.PointsMaterial({
-      color: 0xc8ff00,
+      color: 0x4A90D9,
       size: 1.2,
       transparent: true,
       opacity: 0.6,
@@ -109,7 +109,7 @@ const HeroScene = (() => {
     lineGeometry.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
 
     const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0xc8ff00,
+      color: 0x4A90D9,
       transparent: true,
       opacity: 0.06,
       blending: THREE.AdditiveBlending,
