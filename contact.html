@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — PCM | Get In Touch</title>
+  <meta name="description" content="Contact PCM for law enforcement, military, and civilian self-defense training in Lebanon, TN. Call (615) 828-5384 or fill out our contact form.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-barba="wrapper">
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Page Transition Overlay -->
+  <div class="transition-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PCM<span>.</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link" data-magnetic>Home</a>
+        <a href="about.html" class="nav__link" data-magnetic>About</a>
+        <a href="training.html" class="nav__link" data-magnetic>Training</a>
+        <a href="contact.html" class="nav__link active" data-magnetic>Contact</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu">
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="training.html" class="nav__mobile-link">Training</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main data-barba="container" data-barba-namespace="contact">
+
+    <!-- Hero -->
+    <section class="about-hero" style="height: 50vh; min-height: 350px;">
+      <div class="about-hero__bg">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 60%);"></div>
+      </div>
+      <div class="container about-hero__content">
+        <p class="label section__label" data-animate="fade-up" style="color: var(--accent);">Get In Touch</p>
+        <h1 class="heading-xl" data-split="chars">Contact</h1>
+        <p class="hero__subtitle" data-animate="fade-up">Ready to start training? Have questions? Reach out and we'll get back to you within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div>
+            <p class="label section__label" data-animate="fade-up">Send a Message</p>
+            <h2 class="heading-md" style="margin-bottom: 40px;" data-animate="fade-up">Let's Talk</h2>
+
+            <form class="contact-form" data-animate="fade-up" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(615) 555-0123">
+              </div>
+              <div class="form-group">
+                <label for="interest">Area of Interest</label>
+                <select id="interest" name="interest">
+                  <option value="" disabled selected>Select a training area</option>
+                  <option value="self-defense">Self-Defense</option>
+                  <option value="handgun">Handgun Training</option>
+                  <option value="tactical">Tactical Training</option>
+                  <option value="law-enforcement">Law Enforcement</option>
+                  <option value="edged-weapon">Edged Weapon Defense</option>
+                  <option value="monthly">Monthly Program</option>
+                  <option value="private">Private / Agency Training</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your training goals..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" data-magnetic><span>Send Message</span> <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div>
+            <p class="label section__label" data-animate="fade-up">Information</p>
+            <h2 class="heading-md" style="margin-bottom: 40px;" data-animate="fade-up">Find Us</h2>
+
+            <div class="contact-info" data-animate="fade-up">
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 14.5v2.5a1.67 1.67 0 01-1.82 1.67A16.5 16.5 0 011.33 4.82 1.67 1.67 0 013 3h2.5a1.67 1.67 0 011.67 1.43c.1.8.3 1.58.57 2.33a1.67 1.67 0 01-.38 1.76L6 9.88a13.33 13.33 0 006.12 6.12l1.36-1.36a1.67 1.67 0 011.76-.38c.75.28 1.53.47 2.33.57A1.67 1.67 0 0117 16.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-info__text">
+                  <h4>Phone</h4>
+                  <p><a href="tel:6158285384">(615) 828-5384</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3.33 3.33h13.34c.92 0 1.66.75 1.66 1.67v10c0 .92-.74 1.67-1.66 1.67H3.33c-.92 0-1.66-.75-1.66-1.67V5c0-.92.74-1.67 1.66-1.67z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.33 5L10 11.67 1.67 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-info__text">
+                  <h4>Email</h4>
+                  <p><a href="mailto:levimontgomery@gmail.com">levimontgomery@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17.5 8.33c0 5.84-7.5 10-7.5 10s-7.5-4.16-7.5-10a7.5 7.5 0 1115 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="8.33" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <div class="contact-info__text">
+                  <h4>Location</h4>
+                  <p>Lebanon, Tennessee</p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.33" stroke="currentColor" stroke-width="1.5"/><path d="M10 5v5l3.33 1.67" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <div class="contact-info__text">
+                  <h4>Training Hours</h4>
+                  <p>Monday evenings: 7:00 – 8:30 PM<br>Private sessions by appointment</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact-map" data-animate="fade-up" style="margin-top: 40px;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51594.77!2d-86.33!3d36.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646d4fd43b3b55%3A0xf4a5c19899ddea78!2sLebanon%2C%20TN!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <a href="index.html" class="nav__logo">PCM<span>.</span></a>
+            <p>Physical Confrontation Management. Elite law enforcement, military, and civilian self-defense training in Lebanon, Tennessee.</p>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Navigate</h4>
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About</a>
+            <a href="training.html" class="footer__link">Training</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Training</h4>
+            <a href="training.html" class="footer__link">Self-Defense</a>
+            <a href="training.html" class="footer__link">Handgun</a>
+            <a href="training.html" class="footer__link">Tactical</a>
+            <a href="training.html" class="footer__link">Law Enforcement</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Contact</h4>
+            <a href="tel:6158285384" class="footer__link">(615) 828-5384</a>
+            <a href="mailto:levimontgomery@gmail.com" class="footer__link">Email Us</a>
+            <p class="footer__link">Lebanon, TN</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 PCM. All rights reserved.</p>
+          <p>Physical Confrontation Management</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js"></script>
+
+  <!-- App Scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"] span');
+      const originalText = btn.textContent;
+
+      btn.textContent = 'Sending...';
+
+      // Simulate submission (replace with actual form handler like Formspree, Netlify Forms, etc.)
+      setTimeout(() => {
+        btn.textContent = 'Message Sent!';
+        form.reset();
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 3000);
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
